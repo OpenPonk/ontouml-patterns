@@ -6,10 +6,14 @@ Class {
 
 { #category : #specs }
 OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuilder [
-	| diagram projectController |
+	| model diagram diagramController projectController |
+	model := aPattern getModel.
 	projectController := aBuilder model workbench projectController.
-	diagram := OPDiagram withWholeModel: aPattern getModel.
+	diagram := OPDiagram withWholeModel: model.
+	projectController project addModel: model.
 	projectController project addDiagram: diagram.
+	diagramController := aBuilder model workbench focusedEditor newDiagramControllerFor: model.
+	projectController addDiagramController: diagramController.
 	projectController openEditorOnDiagram: diagram.
 ]
 

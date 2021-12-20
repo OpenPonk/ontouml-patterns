@@ -11,7 +11,7 @@ GeneralizationMixinPattern class >> getModel [
 	model name: self name , ' Model'.
 	general 		:= self createClass: 'General' withStereotype: OntoUMLMixin. 
 	specificA 	:= self createClass: 'Rigid type' withStereotype: OntoUMLKind.
-	specificB 	:= self createClass: 'Non-rigid type' withStereotype: OntoUMLCategory. 
+	specificB 	:= self createClass: 'Non-rigid type' withStereotype: OntoUMLRoleMixin. 
 	generalizationA := self createGeneralizationFor: general withSpecific: specificA.  	
 	generalizationB := self createGeneralizationFor: general withSpecific: specificB.  
 	model packagedElements 

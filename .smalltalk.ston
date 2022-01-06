@@ -16,6 +16,7 @@ SmalltalkCISpec {
 		},
 		#packages : [
 			'OntoUML-Pattern*'
-		]
+		],
+		#failOnZeroTests : false
 	}
 }

@@ -1,0 +1,21 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#platforms : [
+				#pharo
+			],
+			#baseline : 'OntoUMLPatterns',
+			#directory : 'src'
+		}
+	],
+	#testing : {
+		#coverage : {
+			#packages : [
+				'OntoUML-Pattern*'
+			]
+		},
+		#packages : [
+			'OntoUML-Pattern*'
+		]
+	}
+}

@@ -17,8 +17,15 @@ OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuild
 	projectController openEditorOnDiagram: diagram.
 ]
 
+{ #category : #'as yet unclassified' }
+OntoUMLPatternsUI class >> defaultLayout [
+]
+
 { #category : #specs }
 OntoUMLPatternsUI class >> defaultSpec [
+
+	self flag: 'Pharo 9- compatibility'.
+	^ self defaultLayout
 ]
 
 { #category : #toolbar }

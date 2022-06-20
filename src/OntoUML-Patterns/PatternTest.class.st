@@ -4,8 +4,8 @@ Class {
 	#category : #'OntoUML-Patterns-UI'
 }
 
-{ #category : #specs }
-PatternTest class >> defaultSpec [
+{ #category : #'as yet unclassified' }
+PatternTest class >> defaultLayout [
 	^ SpBoxLayout newVertical
 		add:
 			(SpBoxLayout newHorizontal
@@ -15,4 +15,11 @@ PatternTest class >> defaultSpec [
 						yourself);
 				yourself);
 		yourself.
+]
+
+{ #category : #specs }
+PatternTest class >> defaultSpec [
+
+	self flag: 'Pharo 9- compatibility'.
+	^ self defaultLayout
 ]

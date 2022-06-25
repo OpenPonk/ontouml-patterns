@@ -21,13 +21,6 @@ OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuild
 OntoUMLPatternsUI class >> defaultLayout [
 ]
 
-{ #category : #specs }
-OntoUMLPatternsUI class >> defaultSpec [
-
-	self flag: 'Pharo 9- compatibility'.
-	^ self defaultLayout
-]
-
 { #category : #toolbar }
 OntoUMLPatternsUI class >> toolbarMenu: aBuilder [ 
 	<opEditorToolbarMenu: #OPUmlClassEditorPlugin>

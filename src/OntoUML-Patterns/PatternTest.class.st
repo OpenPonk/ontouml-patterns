@@ -16,10 +16,3 @@ PatternTest class >> defaultLayout [
 				yourself);
 		yourself.
 ]
-
-{ #category : #specs }
-PatternTest class >> defaultSpec [
-
-	self flag: 'Pharo 9- compatibility'.
-	^ self defaultLayout
-]

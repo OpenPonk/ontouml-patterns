@@ -37,6 +37,7 @@ OntoUMLPatternsUI class >> toolbarMenu: aBuilder [
 OntoUMLPatternsUI class >> toolbarMenuItemFor: aBuilder [
 
 	(aBuilder item: 'Patterns')
+		icon: OntoUMLIcons ontoumlIcon;
 		action: [  ];
 		with: [ 
 			(aBuilder item: 'Characterisation pattern') action: [ 

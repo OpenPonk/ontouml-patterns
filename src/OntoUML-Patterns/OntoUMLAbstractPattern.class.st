@@ -1,7 +1,7 @@
 Class {
 	#name : #OntoUMLAbstractPattern,
 	#superclass : #Object,
-	#category : #'OntoUML-Patterns'
+	#category : #'OntoUML-Patterns-Patterns'
 }
 
 { #category : #'model creation' }

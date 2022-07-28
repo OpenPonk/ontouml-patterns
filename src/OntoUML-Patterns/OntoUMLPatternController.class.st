@@ -1,7 +1,7 @@
 Class {
 	#name : #OntoUMLPatternController,
 	#superclass : #Object,
-	#category : #'OntoUML-Patterns'
+	#category : #'OntoUML-Patterns-Patterns'
 }
 
 { #category : #scripts }

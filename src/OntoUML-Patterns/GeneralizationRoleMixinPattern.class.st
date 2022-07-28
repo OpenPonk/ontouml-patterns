@@ -1,7 +1,7 @@
 Class {
 	#name : #GeneralizationRoleMixinPattern,
 	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns'
+	#category : #'OntoUML-Patterns-Patterns'
 }
 
 { #category : #'model creation' }

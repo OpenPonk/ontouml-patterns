@@ -1,7 +1,7 @@
 Class {
 	#name : #GenericRelatorPattern,
 	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns'
+	#category : #'OntoUML-Patterns-Patterns'
 }
 
 { #category : #'model creation' }

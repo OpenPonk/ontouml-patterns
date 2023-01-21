@@ -10,7 +10,7 @@ OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuild
 	| model diagram diagramController projectController |
 	model := aPattern getModel.
 	projectController := aBuilder model workbench projectController.
-	diagram := OPDIOpenPonkDiagram forModelElement: model.
+	diagram := OPOpenPonkDiagram forModelElement: model.
 	projectController project addModel: model.
 	projectController project addDiagram: diagram.
 	diagramController := aBuilder model workbench focusedEditor 

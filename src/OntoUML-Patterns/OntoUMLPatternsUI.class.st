@@ -6,15 +6,17 @@ Class {
 
 { #category : #specs }
 OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuilder [
+
 	| model diagram diagramController projectController |
 	model := aPattern getModel.
 	projectController := aBuilder model workbench projectController.
-	diagram := OPDiagram withWholeModel: model.
+	diagram := OPOpenPonkDiagram forModelElement: model.
 	projectController project addModel: model.
 	projectController project addDiagram: diagram.
-	diagramController := aBuilder model workbench focusedEditor newDiagramControllerFor: model.
+	diagramController := aBuilder model workbench focusedEditor 
+		                     newDiagramControllerFor: model.
 	projectController addDiagramController: diagramController.
-	projectController openEditorOnDiagram: diagram.
+	projectController openEditorOnDiagram: diagram
 ]
 
 { #category : #'as yet unclassified' }
@@ -37,6 +39,7 @@ OntoUMLPatternsUI class >> toolbarMenu: aBuilder [
 OntoUMLPatternsUI class >> toolbarMenuItemFor: aBuilder [
 
 	(aBuilder item: 'Patterns')
+		icon: OntoUMLIcons ontoumlIcon;
 		action: [  ];
 		with: [ 
 			(aBuilder item: 'Characterisation pattern') action: [ 

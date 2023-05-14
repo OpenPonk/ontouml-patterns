@@ -8,11 +8,11 @@ Class {
 BaselineOfOntoUMLPatterns >> baseline: spec [
 
 	<baseline>
-	spec for: #common do: [ 
-		spec baseline: 'OntoUMLProfile-Plugin' with: [ 
+	spec for: #common do: [
+		spec baseline: 'OntoUMLProfile-Plugin' with: [
 			spec
 				className: 'BaselineOfOntoUMLProfile';
-				repository: 'github://openponk/ontouml-profile:dev-roassal3';
+				repository: 'github://openponk/ontouml-profile';
 				loads: 'plugin' ].
 		spec
 			project: 'OntoUMLProfile'

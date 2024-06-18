@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfOntoUMLPatterns }
+Package { #name : 'BaselineOfOntoUMLPatterns' }

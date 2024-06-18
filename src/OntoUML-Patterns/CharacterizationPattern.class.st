@@ -1,10 +1,12 @@
 Class {
-	#name : #CharacterizationPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'CharacterizationPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 CharacterizationPattern class >> getModel [
 	| model mode characterized characterization |
 	model := OntoUMLPatternController getEmptyModel.

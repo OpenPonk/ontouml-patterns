@@ -1,10 +1,12 @@
 Class {
-	#name : #FormalRelationPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'FormalRelationPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 FormalRelationPattern class >> getModel [
 	| model endurantA endurantB formal |
 	model := OntoUMLPatternController getEmptyModel.

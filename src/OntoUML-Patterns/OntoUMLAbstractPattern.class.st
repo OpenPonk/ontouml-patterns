@@ -1,10 +1,12 @@
 Class {
-	#name : #OntoUMLAbstractPattern,
-	#superclass : #Object,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'OntoUMLAbstractPattern',
+	#superclass : 'Object',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd [
 	| association |
 	association := OPUMLAssociation new.
@@ -24,7 +26,7 @@ OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd [
 	^ association
 ]
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd with: aStereotype [ 
 	| association |
 	association := self createAssociationFrom: aSource to: aEnd.
@@ -32,7 +34,7 @@ OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd with: aS
 	^ association.
 ]
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 OntoUMLAbstractPattern class >> createClass: aName withStereotype: aStereotype [
 	| result |
 	result := OPUMLClass new.
@@ -41,7 +43,7 @@ OntoUMLAbstractPattern class >> createClass: aName withStereotype: aStereotype [
 	^ result.
 ]
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 OntoUMLAbstractPattern class >> createGeneralizationFor: aGeneral withSpecific: aSpecific [
 	| generalization |
 	generalization := OPUMLGeneralization new.
@@ -50,7 +52,7 @@ OntoUMLAbstractPattern class >> createGeneralizationFor: aGeneral withSpecific: 
 	^ generalization.
 ]
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 OntoUMLAbstractPattern class >> getModel [
 	self subclassResponsibility.
 ]

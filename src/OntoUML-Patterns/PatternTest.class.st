@@ -1,10 +1,12 @@
 Class {
-	#name : #PatternTest,
-	#superclass : #SpPresenter,
-	#category : #'OntoUML-Patterns-UI'
+	#name : 'PatternTest',
+	#superclass : 'SpPresenter',
+	#category : 'OntoUML-Patterns-UI',
+	#package : 'OntoUML-Patterns',
+	#tag : 'UI'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 PatternTest class >> defaultLayout [
 	^ SpBoxLayout newVertical
 		add:

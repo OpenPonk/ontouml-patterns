@@ -1,10 +1,12 @@
 Class {
-	#name : #GeneralizationCategoryPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'GeneralizationCategoryPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 GeneralizationCategoryPattern class >> getModel [
 	| model general specificA specificB generalizationA generalizationB |
 	model := OntoUMLPatternController getEmptyModel.

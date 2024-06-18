@@ -1,10 +1,12 @@
 Class {
-	#name : #PartitionRoleMixinPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'PartitionRoleMixinPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 PartitionRoleMixinPattern class >> getModel [
 	| model general specificA specificB generalizationA generalizationB generalizationSet |
 	model := OntoUMLPatternController getEmptyModel.

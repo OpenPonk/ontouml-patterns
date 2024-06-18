@@ -1,10 +1,12 @@
 Class {
-	#name : #OntoUMLPatternsUI,
-	#superclass : #SpPresenter,
-	#category : #'OntoUML-Patterns-UI'
+	#name : 'OntoUMLPatternsUI',
+	#superclass : 'SpPresenter',
+	#category : 'OntoUML-Patterns-UI',
+	#package : 'OntoUML-Patterns',
+	#tag : 'UI'
 }
 
-{ #category : #specs }
+{ #category : 'specs' }
 OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuilder [
 
 	| model diagram diagramController projectController |
@@ -19,11 +21,11 @@ OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuild
 	projectController openEditorOnDiagram: diagram
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 OntoUMLPatternsUI class >> defaultLayout [
 ]
 
-{ #category : #toolbar }
+{ #category : 'toolbar' }
 OntoUMLPatternsUI class >> toolbarMenu: aBuilder [
 
 	<opEditorToolbarMenu: #OPUmlClassEditorPlugin>
@@ -35,7 +37,7 @@ OntoUMLPatternsUI class >> toolbarMenu: aBuilder [
 	self toolbarMenuItemFor: aBuilder
 ]
 
-{ #category : #specs }
+{ #category : 'specs' }
 OntoUMLPatternsUI class >> toolbarMenuItemFor: aBuilder [
 
 	(aBuilder item: 'Patterns')

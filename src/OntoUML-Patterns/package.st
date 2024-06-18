@@ -1,1 +1,1 @@
-Package { #name : #'OntoUML-Patterns' }
+Package { #name : 'OntoUML-Patterns' }

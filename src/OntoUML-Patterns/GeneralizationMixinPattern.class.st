@@ -1,10 +1,12 @@
 Class {
-	#name : #GeneralizationMixinPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'GeneralizationMixinPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 GeneralizationMixinPattern class >> getModel [
 	| model general specificA specificB generalizationA generalizationB |
 	model := OntoUMLPatternController getEmptyModel.

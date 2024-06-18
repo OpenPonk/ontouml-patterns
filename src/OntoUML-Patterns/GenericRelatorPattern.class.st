@@ -1,10 +1,12 @@
 Class {
-	#name : #GenericRelatorPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'GenericRelatorPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 GenericRelatorPattern class >> getModel [
 	| model endurantA endurantB relator mediationA mediationB material |
 	model := OntoUMLPatternController getEmptyModel.

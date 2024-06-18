@@ -1,17 +1,19 @@
 Class {
-	#name : #OntoUMLPatternController,
-	#superclass : #Object,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'OntoUMLPatternController',
+	#superclass : 'Object',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #scripts }
+{ #category : 'scripts' }
 OntoUMLPatternController class >> applyProfileTo: aModel [
 
 	aModel profileApplications add:
 		(OPUMLProfileApplication new appliedProfile: self profile)
 ]
 
-{ #category : #scripts }
+{ #category : 'scripts' }
 OntoUMLPatternController class >> getEmptyModel [
 	| model |
 	model := OPUMLPackage new name: 'OntoUML Pattern Model'.
@@ -19,14 +21,14 @@ OntoUMLPatternController class >> getEmptyModel [
 	^ model.
 ]
 
-{ #category : #scripts }
+{ #category : 'scripts' }
 OntoUMLPatternController class >> openEmptyModel [
 	| controller |
 	controller := self new.
 	^ controller openModel: controller emptyModel.
 ]
 
-{ #category : #scripts }
+{ #category : 'scripts' }
 OntoUMLPatternController class >> profile [
 	^ OntoUMLProfileFactory profile.
 ]

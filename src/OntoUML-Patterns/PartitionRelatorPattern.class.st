@@ -1,10 +1,12 @@
 Class {
-	#name : #PartitionRelatorPattern,
-	#superclass : #OntoUMLAbstractPattern,
-	#category : #'OntoUML-Patterns-Patterns'
+	#name : 'PartitionRelatorPattern',
+	#superclass : 'OntoUMLAbstractPattern',
+	#category : 'OntoUML-Patterns-Patterns',
+	#package : 'OntoUML-Patterns',
+	#tag : 'Patterns'
 }
 
-{ #category : #'model creation' }
+{ #category : 'model creation' }
 PartitionRelatorPattern class >> getModel [
 	| model general specificA specificB generalizationA generalizationB generalizationSet |
 	model := OntoUMLPatternController getEmptyModel.

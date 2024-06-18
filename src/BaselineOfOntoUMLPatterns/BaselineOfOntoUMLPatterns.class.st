@@ -1,10 +1,11 @@
 Class {
-	#name : #BaselineOfOntoUMLPatterns,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfOntoUMLPatterns
+	#name : 'BaselineOfOntoUMLPatterns',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfOntoUMLPatterns',
+	#package : 'BaselineOfOntoUMLPatterns'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfOntoUMLPatterns >> baseline: spec [
 
 	<baseline>

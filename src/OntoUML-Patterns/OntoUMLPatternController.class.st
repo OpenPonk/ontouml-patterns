@@ -22,7 +22,7 @@ OntoUMLPatternController class >> getEmptyModel [
 ]
 
 { #category : 'scripts' }
-OntoUMLPatternController class >> openEmptyModel [
+OntoUMLPatternController class >> openExampleEmptyModel [
 	| controller |
 	controller := self new.
 	^ controller openModel: controller emptyModel.

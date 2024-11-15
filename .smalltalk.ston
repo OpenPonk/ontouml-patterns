@@ -4,19 +4,19 @@ SmalltalkCISpec {
 			#platforms : [
 				#pharo
 			],
-			#baseline : 'OntoUMLPatterns',
+			#baseline : 'OpenPonkOntoUMLPatterns',
 			#directory : 'src'
 		}
 	],
 	#testing : {
+		#packages : [
+			'OpenPonk*'
+		],
 		#coverage : {
 			#packages : [
-				'OntoUML-Pattern*'
+				'OpenPonk-OntoUML-Pattern*'
 			]
 		},
-		#packages : [
-			'OntoUML-Pattern*'
-		],
 		#failOnZeroTests : false
 	}
 }

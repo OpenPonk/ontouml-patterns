@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Characterization pattern. I generate a standard structural model linking an intrinsic moment (such as a Quality or Mode) to its bearer via a characterization relation.
+"
 Class {
 	#name : 'CharacterizationPattern',
 	#superclass : 'OntoUMLAbstractPattern',

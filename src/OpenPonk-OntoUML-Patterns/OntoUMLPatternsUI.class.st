@@ -1,3 +1,6 @@
+"
+I am a Spec presenter that integrates OntoUML pattern tools into the OpenPonk user interface. I provide toolbar menus and interaction logic to instantiate patterns directly onto the diagram canvas.
+"
 Class {
 	#name : 'OntoUMLPatternsUI',
 	#superclass : 'SpPresenter',
@@ -21,7 +24,7 @@ OntoUMLPatternsUI class >> createPatternDiagramFor: aPattern withBuilder: aBuild
 	projectController openEditorOnDiagram: diagram
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'layout' }
 OntoUMLPatternsUI class >> defaultLayout [
 ]
 

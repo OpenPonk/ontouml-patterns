@@ -1,3 +1,6 @@
+"
+I represent a general OntoUML Relator pattern. I generate a structural model where a central relator entity connects to multiple mediated entities via mediation relations.
+"
 Class {
 	#name : 'GeneralRelatorPattern',
 	#superclass : 'OntoUMLAbstractPattern',

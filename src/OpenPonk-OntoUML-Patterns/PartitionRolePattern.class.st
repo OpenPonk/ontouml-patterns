@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Role Partition pattern. I generate a model where a Role is divided into a disjoint generalization set of specific sub-roles.
+"
 Class {
 	#name : 'PartitionRolePattern',
 	#superclass : 'OntoUMLAbstractPattern',

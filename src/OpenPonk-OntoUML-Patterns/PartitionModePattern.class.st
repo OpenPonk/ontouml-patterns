@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Mode Partition pattern. I generate a model where a Mode is divided into a disjoint generalization set of specific sub-modes.
+"
 Class {
 	#name : 'PartitionModePattern',
 	#superclass : 'OntoUMLAbstractPattern',

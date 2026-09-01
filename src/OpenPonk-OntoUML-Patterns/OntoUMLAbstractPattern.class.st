@@ -1,3 +1,6 @@
+"
+I am the abstract base class for programmatic OntoUML modeling patterns. I provide utility methods to generate standard structural models, instantiate stereotyped classes, and create associations or generalizations.
+"
 Class {
 	#name : 'OntoUMLAbstractPattern',
 	#superclass : 'Object',
@@ -8,6 +11,7 @@ Class {
 
 { #category : 'model creation' }
 OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd [
+
 	| association |
 	association := OPUMLAssociation new.
 	OPUMLProperty new
@@ -22,7 +26,7 @@ OntoUMLAbstractPattern class >> createAssociationFrom: aSource to: aEnd [
 		upperValue: (OPUMLLiteralUnlimitedNatural new value: 1);
 		owningAssociation: association;
 		type: aEnd.
-	association memberEnds addAll: association ownedEnds asArray.
+	association memberEnds addAll: association ownedEnds.
 	^ association
 ]
 

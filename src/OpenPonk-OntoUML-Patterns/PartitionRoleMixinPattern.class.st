@@ -1,3 +1,6 @@
+"
+I represent the OntoUML RoleMixin Partition pattern. I generate a model where a RoleMixin is divided into a disjoint generalization set of specific sub-role mixins.
+"
 Class {
 	#name : 'PartitionRoleMixinPattern',
 	#superclass : 'OntoUMLAbstractPattern',

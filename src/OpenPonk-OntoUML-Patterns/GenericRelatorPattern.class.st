@@ -1,3 +1,6 @@
+"
+I represent a generic OntoUML Relator pattern. I generate a standard structural template for material relations and their deriving relators.
+"
 Class {
 	#name : 'GenericRelatorPattern',
 	#superclass : 'OntoUMLAbstractPattern',

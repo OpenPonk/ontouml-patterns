@@ -1,3 +1,6 @@
+"
+I am a controller responsible for initializing and managing OntoUML pattern applications. I provide utilities to set up empty models and apply the core OntoUML profile.
+"
 Class {
 	#name : 'OntoUMLPatternController',
 	#superclass : 'Object',

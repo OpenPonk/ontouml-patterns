@@ -1,3 +1,6 @@
+"
+I represent the OntoUML RoleMixin Generalization pattern. I generate a model where an anti-rigid RoleMixin abstracts shared relational properties of multiple specific Roles.
+"
 Class {
 	#name : 'GeneralizationRoleMixinPattern',
 	#superclass : 'OntoUMLAbstractPattern',

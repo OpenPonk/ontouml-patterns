@@ -1,3 +1,6 @@
+"
+I represent the OntoUML SubKind Partition pattern. I generate a model where a rigid sortal (such as a Kind) is divided into a disjoint generalization set of SubKinds.
+"
 Class {
 	#name : 'PartitionSubKindPattern',
 	#superclass : 'OntoUMLAbstractPattern',

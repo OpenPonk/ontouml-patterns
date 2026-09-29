@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Category Partition pattern. I generate a model where a Category is divided into a disjoint and complete generalization set of specific subtypes.
+"
 Class {
 	#name : 'PartitionCategoryPattern',
 	#superclass : 'OntoUMLAbstractPattern',

@@ -1,3 +1,6 @@
+"
+I am a Spec presenter used exclusively for testing and previewing the UI layouts and generation logic of OntoUML patterns.
+"
 Class {
 	#name : 'PatternTest',
 	#superclass : 'SpPresenter',
@@ -6,7 +9,7 @@ Class {
 	#tag : 'UI'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'layout' }
 PatternTest class >> defaultLayout [
 	^ SpBoxLayout newVertical
 		add:

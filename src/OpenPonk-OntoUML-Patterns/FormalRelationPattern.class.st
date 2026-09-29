@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Formal Relation pattern. I generate a standard structural model for formal relations holding between entities without requiring an external truth-maker.
+"
 Class {
 	#name : 'FormalRelationPattern',
 	#superclass : 'OntoUMLAbstractPattern',

@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Relator Partition pattern. I generate a model where a Relator is divided into a disjoint generalization set of specific sub-relators.
+"
 Class {
 	#name : 'PartitionRelatorPattern',
 	#superclass : 'OntoUMLAbstractPattern',

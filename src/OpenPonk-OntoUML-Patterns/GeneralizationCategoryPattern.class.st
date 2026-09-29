@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Category Generalization pattern. I generate a model where a rigid Category provides essential properties to multiple specific rigid sortals.
+"
 Class {
 	#name : 'GeneralizationCategoryPattern',
 	#superclass : 'OntoUMLAbstractPattern',

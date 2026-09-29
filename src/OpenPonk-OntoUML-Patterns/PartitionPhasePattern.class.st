@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Phase Partition pattern. I generate a standard ontological model where a rigid Kind is partitioned into a set of mutually exclusive and exhaustive Phases (e.g., Child and Adult).
+"
 Class {
 	#name : 'PartitionPhasePattern',
 	#superclass : 'OntoUMLAbstractPattern',

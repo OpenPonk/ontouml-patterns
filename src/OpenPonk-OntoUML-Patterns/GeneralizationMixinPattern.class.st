@@ -1,3 +1,6 @@
+"
+I represent the OntoUML Mixin Generalization pattern. I generate a model where a semi-rigid Mixin acts as a general classifier for multiple specific classes of different kinds.
+"
 Class {
 	#name : 'GeneralizationMixinPattern',
 	#superclass : 'OntoUMLAbstractPattern',

@@ -16,7 +16,7 @@ BaselineOfOpenPonkOntoUMLPatterns >> baseline: spec [
 		spec baseline: 'OpenPonkOntoUMLProfile-Plugin' with: [
 			spec
 				className: 'BaselineOfOpenPonkOntoUMLProfile';
-				repository: 'github://OpenPonk/ontouml-profile';
+				repository: 'github://OpenPonk/ontouml-profile:v5.0.1';
 				loads: 'plugin' ].
 		spec
 			project: 'OpenPonkOntoUMLProfile'

@@ -35,11 +35,12 @@ OPOntoUMLPatternsModelMenuTest >> tearDown [
 { #category : 'tests' }
 OPOntoUMLPatternsModelMenuTest >> testPatternsSubMenuContainsAllFourteenPatternsWhenOntoUmlProfileApplied [
 	"Verifies that Patterns submenu contains all 14 ontological pattern items."
+
 	| umlPlugin testEditor umlPackage ontoProfile profileApplication modelMenuItem patternsItems patternNames |
 	umlPlugin := OPUmlClassEditorPlugin new.
 	testEditor := (OPEditor on: umlPlugin)
-		workbench: mockWorkbench;
-		yourself.
+		              workbench: mockWorkbench;
+		              yourself.
 	umlPackage := OPUMLPackage new.
 	ontoProfile := OntoUMLProfileFactory profile.
 	profileApplication := OPUMLProfileApplication new appliedProfile: ontoProfile.
@@ -47,26 +48,17 @@ OPOntoUMLPatternsModelMenuTest >> testPatternsSubMenuContainsAllFourteenPatterns
 	testEditor openEmptyModel: umlPackage.
 
 	toolbarPresenter focusedEditor: testEditor.
-	modelMenuItem := toolbarPresenter menu menuGroups first menuItems
-		detect: [ :eachMenuItem | eachMenuItem name = 'Model' ].
-	patternsItems := modelMenuItem subMenu menuGroups
-		flatCollect: [ :eachGroup | eachGroup menuItems select: [ :eachItem | eachItem name = 'Patterns' ] ].
-	self assert: patternsItems isNotEmpty.
-	patternNames := patternsItems first subMenu menuGroups
-		flatCollect: [ :eachGroup | eachGroup menuItems collect: [ :eachItem | eachItem name ] ].
-	self assertCollection: patternNames includesAll: #(
-		'Characterisation pattern'
-		'Formal relation pattern'
-		'General relator pattern'
-		'Generalization category pattern'
-		'Generalization mixin pattern'
-		'Generalization rolemixin pattern'
-		'Generic relator pattern'
-		'Partition category pattern'
-		'Partition mode pattern'
-		'Partition phase pattern'
-		'Partition relator pattern'
-		'Partition rolemixin pattern'
-		'Partition role pattern'
-		'Partition subkind pattern' )
+	modelMenuItem := toolbarPresenter menu menuGroups first menuItems detect: [ :eachMenuItem | eachMenuItem name = 'Model' ].
+	patternsItems := modelMenuItem subMenu menuGroups flatCollect: [ :eachGroup |
+		                 eachGroup menuItems select: [ :eachItem | eachItem name = 'Patterns' ] ].
+	self denyEmpty: patternsItems.
+	patternNames := patternsItems first subMenu menuGroups flatCollect: [ :eachGroup |
+		                eachGroup menuItems collect: [ :eachItem | eachItem name ] ].
+	self
+		assertCollection: patternNames
+		includesAll:
+			#( 'Characterisation pattern' 'Formal relation pattern' 'General relator pattern' 'Generalization category pattern'
+			   'Generalization mixin pattern' 'Generalization rolemixin pattern' 'Generic relator pattern' 'Partition category pattern'
+			   'Partition mode pattern' 'Partition phase pattern' 'Partition relator pattern' 'Partition rolemixin pattern'
+			   'Partition role pattern' 'Partition subkind pattern' )
 ]

@@ -23,8 +23,9 @@ BaselineOfOpenPonkOntoUMLPatterns >> baseline: spec [
 			copyFrom: 'OpenPonkOntoUMLProfile-Plugin'
 			with: [ spec loads: 'default' ].
 		spec package: 'OpenPonk-OntoUML-Patterns'.
+		spec package: 'OpenPonk-OntoUML-Patterns-Tests' with: [ spec requires: #( 'OpenPonk-OntoUML-Patterns' ) ].
 		spec
 			group: 'plugin'
-			with: #( 'OpenPonkOntoUMLProfile-Plugin' 'OpenPonk-OntoUML-Patterns' ).
-		spec group: 'default' with: #( OpenPonkOntoUMLProfile 'OpenPonk-OntoUML-Patterns' ) ]
+			with: #( 'OpenPonkOntoUMLProfile-Plugin' 'OpenPonk-OntoUML-Patterns' 'OpenPonk-OntoUML-Patterns-Tests' ).
+		spec group: 'default' with: #( OpenPonkOntoUMLProfile 'OpenPonk-OntoUML-Patterns' 'OpenPonk-OntoUML-Patterns-Tests' ) ]
 ]

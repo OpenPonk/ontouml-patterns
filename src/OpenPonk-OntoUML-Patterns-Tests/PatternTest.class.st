@@ -4,8 +4,8 @@ I am a Spec presenter used exclusively for testing and previewing the UI layouts
 Class {
 	#name : 'PatternTest',
 	#superclass : 'SpPresenter',
-	#category : 'OpenPonk-OntoUML-Patterns-UI',
-	#package : 'OpenPonk-OntoUML-Patterns',
+	#category : 'OpenPonk-OntoUML-Patterns-Tests-UI',
+	#package : 'OpenPonk-OntoUML-Patterns-Tests',
 	#tag : 'UI'
 }
 

@@ -6,9 +6,9 @@ Class {
 		'mockWorkbench',
 		'projectController'
 	],
-	#category : 'OpenPonk-OntoUML-Patterns-Tests',
-	#package : 'OpenPonk-OntoUML-Patterns',
-	#tag : 'Tests'
+	#category : 'OpenPonk-OntoUML-Patterns-Tests-Commands',
+	#package : 'OpenPonk-OntoUML-Patterns-Tests',
+	#tag : 'Commands'
 }
 
 { #category : 'running' }
